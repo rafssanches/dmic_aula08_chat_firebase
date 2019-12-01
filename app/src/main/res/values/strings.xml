@@ -10,4 +10,5 @@
     <string name="cant_login">Não deu para logar, tente novamente depois</string>
     <string name="msg_enviada">Mensagem enviada</string>
     <string name="no_gps_no_app">Sem GPS o aplicativo não funciona por completo</string>
+    <string name="cadastro">Cadastrar usuário</string>
 </resources>

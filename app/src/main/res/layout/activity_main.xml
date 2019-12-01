@@ -1,44 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="@drawable/main_gradient"
+    >
+
     <EditText
         android:id="@+id/loginEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:hint="@string/dica_login"/>
+        android:hint="@string/dica_login"
+        android:padding="12dp"
+        android:background="@drawable/round_rectangle"
+        />
+
     <EditText
         android:id="@+id/senhaEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
         android:hint="@string/dica_senha"
-        android:inputType="textPassword"/>
-    <Button
-        android:onClick="fazerLogin"
-        android:layout_gravity="end"
-        android:layout_marginEnd="20dp"
-        android:layout_width="wrap_content"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/round_rectangle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@android:string/ok"/>
-    <Button
-        android:onClick="irParaCadastro"
-        android:layout_gravity="end"
-        android:layout_marginEnd="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/quero_me_cadastrar"
-        android:background="@android:color/white"/>
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/cadastroBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:paddingHorizontal="10dp"
+            android:onClick="irParaCadastro"
+            android:text="@string/quero_me_cadastrar"
+            android:textAllCaps="false"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|end"
+            android:layout_marginEnd="20dp"
+            android:onClick="fazerLogin"
+            android:text="@android:string/ok" />
+
+    </LinearLayout>
 </LinearLayout>
